@@ -3,19 +3,23 @@ package java_week_1;
 public class Hello2 {
 
 	public static void main(String[] args) {
-		char t1 = 'e';
-		byte t2 = 120;
-		short t3 = 1546;
-		int t4 = 1_000_000;
-		long t5 = 2_000_000_000_000l;
-		boolean t6 = true;
-		float t7 = 7.43f;
-		double t8 = 7.33e10;
+		printObjectVersion();;
+	}
+	
+	private static void printObjectVersion() {
+		Character t1 = 'e';
+		Byte t2 = 120;
+		Short t3 = 1546;
+		Integer t4 = 1_000_000;
+		Long t5 = 2_000_000_000_000l;
+		Boolean t6 = true;
+		Float t7 = 7.43f;
+		Double t8 = 7.33e10;
 		
-		System.out.println("Char type : \n char : " + t1);
-		System.out.println("Integer types : \n byte : " + t2 + "\n short : " + t3 + "\n int : " + t4 + "\n long : " + t5);
-		System.out.println("Boolean type : \n boolean : " + t6);
-		System.out.println("Floating-point types : \n float : " + t7 + "\n double : " + t8);
+		System.out.println("Char object type : \n Character : " + t1);
+		System.out.println("Integer object types : \n Byte : " + t2 + "\n Short : " + t3 + "\n Integer : " + t4 + "\n Long : " + t5);
+		System.out.println("Boolean object type : \n Boolean : " + t6);
+		System.out.println("Floating-point object types : \n Float : " + t7 + "\n Double : " + t8);
 	}
 
 }
