@@ -5,12 +5,16 @@ import java.util.Arrays;
 public class Visitors {
 	private LocalDate date;
 	private Integer cardioCount, radioCount, visitCount;
-	//private String testClass;
+	
+	public Visitors() {
+		this.date = null;
+		this.cardioCount = 0;
+		this.radioCount = 0;
+		this.visitCount = 0;
+	}
 	
 	public Visitors(String entry) {
-		//this.testClass = entry;
 		String[] entriesOfDay = entry.split(",");
-		System.out.println(Arrays.toString(entriesOfDay));
 		this.date = LocalDate.parse(entriesOfDay[0]);
 		this.cardioCount = Integer.valueOf(entriesOfDay[1]);
 		this.radioCount = Integer.valueOf(entriesOfDay[2]);
@@ -19,6 +23,18 @@ public class Visitors {
 	
 	public LocalDate getDate() {
 		return date;	
+	}
+	
+	public Integer getCardioCount() {
+		return cardioCount;	
+	}
+	
+	public Integer getRadioCount() {
+		return radioCount;	
+	}
+	
+	public Integer getvisitCount() {
+		return visitCount;	
 	}
 	
 	public String toString() {
