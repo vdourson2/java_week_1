@@ -27,8 +27,6 @@ public class CountingWords {
 			HashMap<String,Integer> countWords = new HashMap<>();
 			for(String word:textArray) {
 				String cleanWord = word.replaceAll("\\p{Punct}", "").toLowerCase();
-				System.out.println(cleanWord);
-				//countWords.putIfAbsent(cleanWord, 1);
 				countWords.merge(cleanWord, 1, Integer::sum);
 			}
 			System.out.println(countWords);
