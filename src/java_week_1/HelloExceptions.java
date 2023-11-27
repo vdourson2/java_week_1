@@ -26,7 +26,10 @@ public class HelloExceptions {
 			}
 		}
 		catch (Exception e) {
-			//System.out.println("You cannot divide a number by o - " + e);
+			//This one gives a message but continue outside of the catch 
+			//(but doesn't end this one if a /0 is encountered)
+			System.out.println("You cannot divide a number by o - " + e);
+			//This one would stop the program
 			throw new IllegalArgumentException("You cannot divide a number by o - " + e);
 		}
 		System.out.println(Arrays.toString(dividedArray));
